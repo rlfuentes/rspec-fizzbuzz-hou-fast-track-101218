@@ -1,4 +1,24 @@
-require_relative './spec_helper.rb'
+
+def fizzBuzz(number)
+  if number % 3 == 0 && number % 5 == 0
+    "FizzBuzz"
+  elsif number % 3 == 0
+    "Fizz"
+  elsif number % 5 == 0
+    "Buzz"
+  else
+    number
+  end
+end
+
+
+
+
+
+
+
+endrequire_relative './spec_helper.rb'
+require_relative '../fizzbuzz.rb'
 # We are missing a 'require_relative' here. Check README.md for instructions and an explanation! 
 
 describe "fizzbuzz" do
